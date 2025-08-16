@@ -4,7 +4,7 @@ void main() {
   int addition = number1 + number2;
   int subtraction = number1 - number2;
   int multiplication = number1 * number2;
-  var division = number1 / number2;
+  num division = number1 / number2;
   int modulo = number1 % number2;
   print('Addition: $addition');
   print('Subtraction: $subtraction');
