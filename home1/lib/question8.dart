@@ -12,3 +12,6 @@ void main() {
   print('Division: $division');
   print('Modulo: $modulo');
 }
+/* 8. Write a Dart program that declares two numeric variables and performs addition, subtraction,
+ multiplication, division, and modulo on them. Print each result.
+  */
