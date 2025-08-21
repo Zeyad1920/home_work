@@ -1,7 +1,7 @@
 import 'dart:io';
 
 void main() {
-  List<dynamic> numbers = [5, 16]; // list is nullable
+  List<dynamic> numbers = []; // list is nullable
 
   if (numbers.isEmpty || numbers == null) {
     print("NO Scores");
