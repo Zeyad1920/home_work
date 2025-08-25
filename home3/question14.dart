@@ -1,9 +1,9 @@
 import 'dart:io';
 
 void main() {
-  List<dynamic> numbers = []; // list is nullable
+  List<dynamic>? numbers = []; // list is nullable
 
-  if (numbers.isEmpty || numbers == null) {
+  if (numbers == null || numbers.isEmpty) {
     print("NO Scores");
   } else {
     num sum = numbers.first + numbers.last;

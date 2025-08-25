@@ -9,7 +9,7 @@ void main() {
     print("phone3 is null");
     phones['phone3'] = '01142151054';
 
-    int length = phones['phone3']!.length;
+    int length = phones['phone3'].toString().length;
     print("the new length of phones3 is ${length}");
   } else {
     print("phone3 is exist");
