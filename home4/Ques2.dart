@@ -7,3 +7,6 @@ void main() {
   countryCode['QA'] = 'Qatar';
   print(countryCode['EG']);
 }
+/* Q2
+ Create a program that stores country codes and names. Start with: EG → Egypt, SA → Saudi
+ Arabia, AE → UAE. Add QA → Qatar and then print the name of the country with the code EG */
