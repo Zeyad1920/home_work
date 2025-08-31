@@ -1,5 +1,3 @@
-import 'dart:collection';
-
 void main() {
   List<double> numbers = [5, 10, 15, 20, 25];
   double sum = 0;
