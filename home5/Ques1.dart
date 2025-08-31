@@ -1,0 +1,8 @@
+void main() {
+  int birthYear = 2004;
+  int age = 2025 - birthYear;
+  print("You are: $age years old");
+}
+/* Q1
+ Create a program that declares an integer for birthYear and calculates the age assuming the
+ current year is 2025. Print 'You are X years old */
