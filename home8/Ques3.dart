@@ -3,6 +3,7 @@ void main() {
     Movie()..title ="Shark in Sea" .. rating = 8 ,
     Movie().. title = " Adaham in Egypt" ..rating = 6,
     Movie().. title = "El kameer" .. rating = 9 ,
+    
 ];
 for (var mov in movie ){
   if (mov.rating! > 7.0){
