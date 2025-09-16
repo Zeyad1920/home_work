@@ -1,27 +1,21 @@
 void main() {
-  Map<String, String> dic = {
-    '{': '}',
-    '(': ')',
-    '[': ']',
-    '}': '{',
-    ')': '(',
-    ']': '[',
-  };
-  String? char = '()';
+  Map<String, String> dic = {'{': '}', '(': ')', '[': ']'};
+  String? char = '(])';
 
-  List<String?> ch = [];
-  ch.addAll(char.split(''));
+  
+  List<String?> charcters = [];
+  charcters.addAll(char.split(''));
 
-  for (var i in ch) {
-    for (var j in ch) {
+  for (var i in char.split('')) {
+    for (var j in char.split('')) {
       if (dic[i] == j) {
-        ch.remove(i);
-        ch.remove(j);
-        print(ch.length);
+        charcters.remove(i);
+        charcters.remove(j);
       }
     }
   }
-  if (ch.isEmpty) {
+
+  if (charcters.isEmpty) {
     print("valid");
   } else {
     print("invalid");
