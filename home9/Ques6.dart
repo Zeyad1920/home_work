@@ -1,16 +1,31 @@
 void main() {
   Map<String, String> dic = {'{': '}', '(': ')', '[': ']'};
-  String? char = '(])';
+  String? char = '{[]}}';
+  String? lastChar1 = '';
+  String? lastChar2 = '';
 
-  
   List<String?> charcters = [];
   charcters.addAll(char.split(''));
 
   for (var i in char.split('')) {
-    for (var j in char.split('')) {
-      if (dic[i] == j) {
-        charcters.remove(i);
-        charcters.remove(j);
+    if (i == lastChar1 || i == lastChar2) {
+      continue;
+    } else {
+      bool key = true;
+      for (var j in char.split('')) {
+        if (j == lastChar2 || j == lastChar1) {
+          continue;
+        } else {
+          if (dic[i] == j) {
+            while (key) {
+              lastChar2 = i;
+              lastChar2 = j;
+              charcters.remove(i);
+              charcters.remove(j);
+              key = false;
+            }
+          }
+        }
       }
     }
   }
@@ -20,6 +35,7 @@ void main() {
   } else {
     print("invalid");
   }
+  print(charcters);
 }
 
 /* An input string is valid if:
