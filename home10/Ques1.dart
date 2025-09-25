@@ -41,7 +41,7 @@ class Car extends Vehicle {
 }
 
 class Truck extends Vehicle {
-  int? _loadCapacity;
+  int? _loadCapacity; // load capacity in tons
   Truck(int power, int cap, this._loadCapacity) : super(power, cap);
   set loadCapacity(int? load) {
     _loadCapacity = load;
